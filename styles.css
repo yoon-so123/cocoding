@@ -372,3 +372,83 @@ a:hover::after {
   display: flex;
   flex-flow: column nowrap;
 } }*/
+.send {
+  text-decoration: underline;
+}
+.hidepc {
+  display: none;
+}
+.hide {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.hide::after {
+  content: "";
+  position: absolute;
+  top: 33px;
+  left: 0px;
+  width: 80px;
+  height: 4px;
+  background: #ffe600;
+  z-index: -1;
+}
+.middle {
+  display: grid;
+  grid-template: repeat(3, auto) / 2em auto 2em;
+}
+.middle > div {
+  grid-column: 2/3;
+}
+.centense {
+  grid-row: 1/2;
+}
+.about-me {
+  grid-row: 2/3;
+  text-align: center;
+  width: 100%;
+  object-fit: cover;
+}
+.me {
+  box-shadow: 5px 5px 0 #ffe600, 10px 10px 0 black;
+}
+.conimg {
+  margin: 1em 0;
+}
+.two {
+  grid-row: 3/4;
+}
+button {
+  margin-bottom: 3em;
+  margin-top: 1em;
+  font-size: 14px;
+  border: none;
+  background: #ffe600;
+  padding: 0.7em 1.3em;
+  margin-left: auto;
+
+  width: 100px;
+  font-weight: 900;
+}
+.chide {
+  font-weight: 900;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+label {
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+input {
+  margin-bottom: 1em;
+}
+.inputone {
+  height: 5vh;
+}
+.inputtwo {
+  height: 10vh;
+}
