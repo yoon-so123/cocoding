@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>상품리스트트</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상품리스트</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="toptitle">
+      <img class="logo" src="images/logo.png" alt="상단로고" />
+      <div class="hambuger">
+        <div class="open-btn">&#9776;</div>
+        <nav class="menu">
+          <div class="close-btn">&times;</div>
+          <ul class="nav-item">
+            <li><a class="selected" href="index.html">전체</a></li>
+            <li><a class="selected" href="list.html">상품 LIST</a></li>
+            <li><a class="selected" href="detailpage.html">상품 소개</a></li>
+            <li><a class="selected" href="contact.html">알림 신청</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="flex-container">
+        <div class="one">
+          <img class="oneimg" src="images/omega.png" alt="오메가3" />
+          <p>
+            [내츄럴플러스] 알티지 오메가3 1200 비타민D 180캡슐
+            1박스(6개월분)+비타민C 구미 2봉 증정
+          </p>
+          <p><strong>49,900원</strong> <span>72%</span></p>
+          <p class="uk">#차태현 오메가3#국민오메가3#고함량#대용량#가성비 굿!</p>
+        </div>
+
+        <div class="two">
+          <img class="twoimg" src="images/vitamin.png" alt="액상비타민" />
+          <p>
+            [내츄럴플러스] 피로개선 앤 액상 멀티비타민 이뮨샷 7병 1박스 총7병
+          </p>
+          <p><strong>17,900원</strong> <span>40%</span></p>
+        </div>
+
+        <div class="three">
+          <img class="img" src="images/gold.png" alt="인사덴티골드" />
+          <p>[내츄럴플러스] 인사덴티 골드 60정 1박스</p>
+          <p><strong>14,900원</strong> <span>63%</span></p>
+          <p class="uk">#뼈+치아건강#항산화 작용#올인원 케어</p>
+        </div>
+
+        <div class="four">
+          <img class="img" src="images/curcumin.png" alt="수용성파워커큐민" />
+          <p>[내츄럴플러스] 수용성 파워 커큐민 30정 3박스</p>
+          <p><strong>37,900원</strong> <span>58%</span></p>
+        </div>
+        <div class="five">
+          <img class="img" src="images/banaba.png" alt="혈당건강바나바" />
+          <p>
+            [내츄럴플러스] 혈당건강 바나바 90정 총4박스(12개월분) + 쇼핑백1호
+          </p>
+          <p><strong>39,900원</strong> <span>75%</span></p>
+        </div>
+
+        <div class="six">
+          <img class="img" src="images/probiotic.png" alt="프로바이오틱스" />
+          <p>
+            [내츄럴플러스] 100억 프로바이오틱스 혼합 유산균 60캡슐
+            1박스(2개월분)
+          </p>
+          <p><strong>18,900원</strong> <span>53%</span></p>
+          <p class="uk">#생유산균 100억 CFU#식물성캡슐#알루알루 포장</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-mainpage">
+      <img class="f-img" src="images/logo.png" alt="logo" />
+      <p class="f-p">ⓒ 2025 건강한 하루 | 고객센터 1234-5678</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
