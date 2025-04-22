@@ -1,6 +1,6 @@
 body {
-  width: 100%;
-  margin: 0;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .slider {
@@ -67,6 +67,7 @@ li {
   font-size: 1.4em;
   padding: 0.4em;
 }
+
 .toptitle {
   display: flex;
   flex-direction: row;
@@ -157,17 +158,81 @@ a:hover::after {
   font-size: 30px;
 }
 
+.best {
+  color: red;
+  font-style: italic;
+}
+
+.slider {
+  width: 80%;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.slides {
+  display: flex;
+  width: 600%;
+  animation: slidee 10s ease infinite;
+  height: 100%;
+}
+@keyframes slidee {
+  0% {
+    transform: translateX(0);
+  }
+  16.6% {
+    transform: translateX(-17%);
+  }
+  33.3% {
+    transform: translateX(-33.5%);
+  }
+  50% {
+    transform: translateX(-49.5%);
+  }
+  66.6% {
+    transform: translateX(-67%);
+  }
+  83.3% {
+    transform: translateX(-84%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide {
+  width: calc(100% / 6);
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+.slide-title {
+  text-align: center;
+  font-size: 2.3em;
+}
+
 .main-article-img {
   width: 100%;
   object-fit: cover;
   margin-top: 1.5em;
+}
+.one-free-color {
+  color: red;
+}
+.free-line {
+  font-size: 1.8em;
+  width: 350px;
 }
 .freecar {
   display: flex;
   justify-content: space-around;
   background: ivory;
   padding: 1em;
-  width: 92%;
+  width: 95%;
   margin: 3em 0;
 }
 .freecar-img {
@@ -182,7 +247,9 @@ a:hover::after {
   justify-content: left;
   margin-top: 1.5em;
 }
-
+.h-plus-pc {
+  display: none;
+}
 .plus-ment {
   width: 80%;
   margin: 0 auto;
@@ -201,12 +268,17 @@ a:hover::after {
   color: gray;
   font-weight: 700;
 }
+.footer {
+  background: #dcdcdc;
+}
+
 .footer-mainpage {
-  margin-top: 15em;
+  margin-top: auto;
   border-top: 2px solid gray;
   width: 100%;
-  height: 40vh;
+  height: 10vh;
 }
+
 .f-img {
   width: 200px;
   height: 50px;
@@ -451,4 +523,101 @@ input {
 }
 .inputtwo {
   height: 10vh;
+}
+
+@media (min-width: 786px) {
+  .open-btn,
+  .close-btn {
+    display: none;
+  }
+  .toptitle {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 8vh;
+  }
+  .menu {
+    flex-direction: row;
+    transform: translateX(0);
+    position: initial;
+  }
+
+  li {
+    padding: 0 0.5em;
+    /* border: 2px solid rgb(112, 216, 138); */
+    padding-top: 15px;
+    font-size: 2em;
+  }
+  .nav-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80em;
+    /* border: 2px solid rgb(74, 15, 176); */
+  }
+  .slider {
+    width: 30vw;
+    height: 60vh;
+    object-fit: contain;
+  }
+  .slide img {
+    width: 100%;
+  }
+  .free-line {
+    font-size: 1.8em;
+    width: 680px;
+  }
+  .main-article-img {
+    width: 100%;
+    object-fit: contain;
+    height: 40vh;
+    padding-bottom: 2.5em;
+  }
+  .one-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main-article {
+    width: 55%;
+  }
+  .freecar {
+    width: 45%;
+    height: 34.1vh;
+    align-items: center;
+    font-size: 2em;
+  }
+
+  .slide-title {
+    font-size: 4.5em;
+  }
+  .freecar-img {
+    width: 15em;
+    height: 15em;
+  }
+  .h-plus-one,
+  .h-plus-two {
+    display: none;
+  }
+  .plus-ment {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .h-plus-pc {
+    display: inline-flex;
+    font-size: 3em;
+  }
+  .h-plus-three {
+    font-size: 2em;
+    margin-top: 2em;
+    margin-left: 1.5em;
+  }
+  .footer-mainpage {
+    width: 100%;
+    height: 10vh;
+    margin-top: auto;
+  }
 }
